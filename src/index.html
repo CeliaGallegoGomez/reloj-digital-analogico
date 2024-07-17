@@ -6,9 +6,35 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Reloj Analogico y digital</title>
   </head>
   <body>
+    <div class="digital-clock">
+      <div class="digital__time">
+        <span class="digital__hours" id="digital-hours">11</span>
+        <span>:</span>
+        <span class="digital__minutes" id="digital-minutes">51</span>
+      </div>
+      <div class="date">
+        <span class="date__day" id="date-day">Tuesday</span>
+        <span class="date__number" id="date-number">17</span>
+        <span class="date__month" id="date-month">July</span>
+        <span class="date__year" id="date--year">2024</span>
+      </div>
+    </div>
+    <div class="analogic-clock">
+      <div class="outer-clock-face">
+        <div class="marking marking-one"></div>
+        <div class="marking marking-two"></div>
+        <div class="marking marking-three"></div>
+        <div class="marking marking-four"></div>
+        <div class="inner-clock-face">
+          <div id="hour-hand" class="hand hour-hand"></div>
+          <div id="minute-hand" class="hand min-hand"></div>
+          <div id="second-hand" class="hand second-hand"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
