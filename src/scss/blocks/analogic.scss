@@ -1,0 +1,115 @@
+.analogic-clock {
+    position: relative;
+    top: 70px;
+    width: 300px;
+    height: 300px;
+    padding: 0.8rem;
+    outline: 7px solid #4f1528;
+    border-radius: 50%;
+     box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.5), inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+      4px 4px 10px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .outer-clock-face {
+    position: relative;
+    background-color: #2b131b;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  
+  .outer-clock-face::after,
+  .outer-clock-face::before,
+  .marking {
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 0;
+    left: calc(50% - 2.5px);
+  }
+  
+  .outer-clock-face::after {
+    rotate:90deg;
+  }
+  
+  .marking {
+    background-color: #bdbdcb;
+    width: 3px;
+  }
+  
+  .marking-one {
+    rotate:30deg;
+  }
+  
+  .marking-two {
+    rotate:60deg
+  }
+  
+  .marking-three {
+    rotate:120deg
+  }
+  
+  .marking-four {
+    rotate:150deg
+  }
+  
+  .inner-clock-face {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #2b131b;
+    border-radius: 100%;
+    z-index: 1;
+  }
+  
+  
+  .inner-clock-face::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 18px;
+    margin-left: -9px;
+    margin-top: -6px;
+    background-color: #4d4b63;
+    z-index: 11;
+  }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    width: 2px;
+    left: calc(50% - 2px);
+    background: #ebcce6;
+    border-radius: 6px;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .hour-hand {
+    height: 100px;
+    width: 8px;
+    rotate: var(--hours-rotate);
+  }
+  
+  .min-hand {
+    height: 120px;
+    width: 4px;
+    rotate: var(--minutes-rotate);
+  }
+  
+  .second-hand {
+   background-color: #ee1aae;
+    width: 2px;
+    height: 150px;
+    rotate: var(--seconds-rotate);
+  }
