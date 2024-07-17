@@ -9,7 +9,7 @@
      box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.5), inset -4px -4px 10px rgba(67, 67, 67, 0.5),
       4px 4px 10px rgba(0, 0, 0, 0.3);
   
-  }
+  };
   
   .outer-clock-face {
     position: relative;
@@ -18,7 +18,7 @@
     width: 100%;
     height: 100%;
     border-radius: 100%;
-  }
+  };
   
   
   .outer-clock-face::after,
@@ -31,32 +31,32 @@
     background-color: #fff;
     z-index: 0;
     left: calc(50% - 2.5px);
-  }
+  };
   
   .outer-clock-face::after {
     rotate:90deg;
-  }
+  };
   
   .marking {
     background-color: #bdbdcb;
     width: 3px;
-  }
+  };
   
   .marking-one {
     rotate:30deg;
-  }
+  };
   
   .marking-two {
     rotate:60deg
-  }
+  };
   
   .marking-three {
     rotate:120deg
-  }
+  };
   
   .marking-four {
     rotate:150deg
-  }
+  };
   
   .inner-clock-face {
     position: absolute;
@@ -67,7 +67,7 @@
     background-color: #2b131b;
     border-radius: 100%;
     z-index: 1;
-  }
+  };
   
   
   .inner-clock-face::before {
@@ -82,7 +82,7 @@
     margin-top: -6px;
     background-color: #4d4b63;
     z-index: 11;
-  }
+  };
   
   .hand {
     position: absolute;
@@ -93,23 +93,23 @@
     border-radius: 6px;
     transform-origin: bottom;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-  }
+  };
   
   .hour-hand {
     height: 100px;
     width: 8px;
     rotate: var(--hours-rotate);
-  }
+  };
   
   .min-hand {
     height: 120px;
     width: 4px;
     rotate: var(--minutes-rotate);
-  }
+  };
   
   .second-hand {
    background-color: #ee1aae;
     width: 2px;
     height: 150px;
     rotate: var(--seconds-rotate);
-  }
+  };
